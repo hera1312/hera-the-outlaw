@@ -1,0 +1,131 @@
+.hero-outlaw {
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.arthur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/arthurmorgan.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: 1;
+
+}
+
+@media (max-width: 768px) {
+    .arthur-overlay {
+        background-attachment: scroll;
+        background-position: 50% center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueHeavy.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RDR2';
+    src: url('../fonts/HelveticaNeueHeavy.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RDR2';
+    src: url(assets/fonts/HelveticaNeueHeavy.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.hera {
+    font-family: RDR2;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(205, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.morgan {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: #cebfc2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.button {
+    background-color: transparent;
+    color: rgb(205, 0, 0);
+    border: 2px solid rgb(205, 0, 0);
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 1;
+    border-radius: 16px;
+    opacity: 0;
+    animation: buttonFadeIn 1s ease 2s 1 normal forwards;
+}
+
+.button:hover {
+    background-color: #d51111;
+    color: #000;
+}
+
+@keyframes buttonFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

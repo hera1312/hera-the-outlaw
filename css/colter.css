@@ -1,0 +1,152 @@
+.colter-overlay {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    background-image: url('../assets/colter2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+
+.colter-story {
+    font-family: 'IM Fell English', serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.colter-story2 {
+    font-family: 'Italianno', cursive;
+    font-size: 128px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    animation: myAnim2 4s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim2 {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.colter-story3 {
+    font-family: 'IM Fell English', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    opacity: 0;
+    display: none;
+    animation: myAnim3 3s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+body {
+    background-color: #000000 !important;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+}
+
+img {
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+    .col-md-5 {
+        margin-bottom: 20px;
+    }
+}
+
+h3,
+p,
+ul,
+li {
+    text-align: center;
+}
+
+p,
+ul,
+li {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+h3 {
+    color: #ff0000 !important;
+    font-family: 'IM Fell English', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.text-box {
+    border: 2px solid #ff0000;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.col-md-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
